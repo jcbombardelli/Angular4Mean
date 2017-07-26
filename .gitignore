@@ -72,3 +72,4 @@ client/app/**/*.js
 client/app/**/*.map
 client/npm-debug.log
 server/npm-debug.log
+client/dist
