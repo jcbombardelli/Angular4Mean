@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "npm run build --prefix client/ && npm start --prefix server/",
+    "start": "cd server && npm install && cd .. && npm start --prefix server/",
+    "start-complete": "npm run build --prefix client/ && npm start --prefix server/",
     "prod":"cd server && npm install && cd .. && cd client && npm install && cd .. && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

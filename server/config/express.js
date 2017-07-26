@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 //routes(app);
 
 app.get('*', (req, res) => {
-  res.sendFile(app.get('clientPath'));
+  res.sendFile(app.get('clientDistPath'));
 });
 
 module.exports = app;
