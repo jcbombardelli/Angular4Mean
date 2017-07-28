@@ -1,14 +1,6 @@
 var api = require('../../../../api/sample.js');
 
-module.exports = function (app) {
+module.exports = function (router) {
 
-    console.log('bbbb');
-    // app.route('/api/v1/event')
-    //     .get(api.works);
-
-
-    app.get('/api/v1/sample', function () {
-        console.log('aaaaa');
-        res.end("test");
-    });
+    router.route('/api/v1/sample').get(api.works);
 };
